@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="#47AA95"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:text="SelfLearn"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:padding="30dp"
+        />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/backgroundlogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:layout_weight="1.8"
+        >
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:inputType="textPersonName"
+            android:background="@drawable/style1"
+            android:padding="10dp"
+            android:autoSizeTextType="uniform"
+            android:hint="Enter Username"
+            android:textColorHint="@android:color/darker_gray"
+            android:textAlignment="center"
+            />
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:background="@drawable/style1"
+            android:padding="10dp"
+            android:autoSizeTextType="uniform"
+            android:hint="Enter password"
+            android:textColorHint="@android:color/darker_gray"
+            android:textAlignment="center"
+            />
+        <EditText
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:background="@drawable/style1"
+            android:padding="10dp"
+            android:autoSizeTextType="uniform"
+            android:hint="Enter mobile number"
+            android:textColorHint="@android:color/darker_gray"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/get_OTP"
+            android:padding="10dp"
+            android:autoSizeTextType="uniform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            android:text="get OTP"
+            android:textAllCaps="false"
+            android:textColor="#47AA95"
+            />
+        <com.chaos.view.PinView
+            app:viewType="rectangle"
+            android:inputType="text"
+            app:cursorColor="#000"
+            android:layout_margin="20dp"
+            app:hideLineWhenFilled="false"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemCount="6"
+            android:id="@+id/pin_view"
+            android:cursorVisible="true"
+            app:itemRadius="5dp"
+            app:lineColor="#000"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:padding="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/loginbg"
+            android:layout_margin="30dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
